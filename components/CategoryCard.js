@@ -3,9 +3,11 @@ import React from 'react';
 
 const CategoryCard = ({ imageUrl, title }) => {
   return (
-    <TouchableOpacity className='flex-1 items-center'>
-      <Image source={imageUrl} className='h-20 w-20 rounded mr-1' />
-      <Text className='text-center'>{title}</Text>
+    <TouchableOpacity className='mr-2 relative border-gray-50 '>
+      <Image source={imageUrl} className='h-20 w-20 rounded' />
+      <Text className='text-center absolute bottom-1 left-1 font-bold text-white'>
+        {title}
+      </Text>
     </TouchableOpacity>
   );
 };
