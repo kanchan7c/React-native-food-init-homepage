@@ -56,8 +56,24 @@ export default function HomeScreen() {
       <ScrollView className='bg-gray-100'>
         {/* Categories  */}
         <Categories />
-        {/* Featured rows  */}
-        <FeaturedRow />
+        {/* Featured  */}
+        <FeaturedRow
+          title='Featured'
+          description='Paid placements from our partners'
+          id='featured'
+        />
+        {/* Tasty Discounts  */}
+        <FeaturedRow
+          title='Tasty Discounts'
+          description='Juicy discounts specially for you!'
+          id='discounts'
+        />
+        {/* Offers near you  */}
+        <FeaturedRow
+          title='Offers near you!'
+          description='Support your local restaurants tonight!'
+          id='offers'
+        />
       </ScrollView>
     </SafeAreaView>
   );
